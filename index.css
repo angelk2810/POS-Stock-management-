@@ -1,0 +1,104 @@
+/* Premium Enterprise Design System Base */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --app-bg: #FAFAFA;
+  --surface: #FFFFFF;
+  --surface-hover: #F4F4F5;
+  --surface-active: #E4E4E7;
+  
+  --text-primary: #09090B;
+  --text-secondary: #52525B;
+  --text-muted: #A1A1AA;
+  
+  --border-subtle: #F4F4F5;
+  --border-default: #E4E4E7;
+  --border-strong: #D4D4D8;
+  
+  --brand-primary: #000000;
+  --brand-primary-hover: #27272A;
+  --brand-accent: #2563EB;
+  --brand-accent-hover: #1D4ED8;
+  
+  --success: #10B981;
+  --success-bg: #ECFDF5;
+  --warning: #F59E0B;
+  --warning-bg: #FFFBEB;
+  --danger: #EF4444;
+  --danger-bg: #FEF2F2;
+  --info: #3B82F6;
+  --info-bg: #EFF6FF;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.02);
+  --shadow-float: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--app-bg);
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+/* Elegant Scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #A1A1AA;
+}
+
+/* Caret visibility & inputs */
+input, textarea, [contenteditable="true"] {
+  caret-color: var(--brand-accent) !important;
+  color: var(--text-primary) !important;
+  transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus, [contenteditable="true"]:focus {
+  background-color: var(--surface) !important;
+  border-color: var(--brand-accent) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+  outline: none !important;
+}
+
+/* Refined Focus Rings for Accessibility */
+*:focus-visible {
+  outline: 2px solid var(--brand-accent) !important;
+  outline-offset: 2px !important;
+}
+
+/* Prevent layout shift on tables */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* Utility for text truncation with ellipsis on multiple lines */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Smooth modal backdrops */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}

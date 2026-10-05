@@ -1,0 +1,10 @@
+{
+  "name": "ElectraStock Pro - Advanced Inventory & POS",
+  "description": "A production-ready keyboard-driven electrical retail inventory, POS, and accounting system with dynamic attributes, variant tracking, GST invoicing, and NL reporting.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

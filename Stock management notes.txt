@@ -1,0 +1,245 @@
+
+ElectraStock Pro Notes
+
+UI / UX
+
+* Increase font size throughout the application. Still feels too small on desktop.
+* Improve spacing and reduce unnecessary white space.
+* Dashboard needs a more premium/professional feel. Data is good but UI looks plain.
+* Make all pages desktop-first. Mouse usage should be optional, not mandatory.
+* Keep layouts consistent across all modules.
+
+
+POS Billing
+
+* Billing should be 100% keyboard navigable.
+* Fix arrow navigation everywhere.
+* Right → next field.
+* Left → previous field.
+* Up/Down should increase/decrease values in numeric fields instead of moving focus.
+* Enter should confirm wherever applicable.
+* ESC should close drawers/popups.
+* F-keys should always work consistently.
+
+
+Billing Workflow
+
+Current flow needs to feel more natural.
+
+Desired flow:
+
+Search Product
+
+↓
+
+Add/Edit Products
+
+↓
+
+(Optional) Select Customer
+
+↓
+
+Select Payment Mode
+
+↓
+
+Complete Bill
+
+Customer selection should always be optional.
+
+Default customer = Walk-in Customer.
+
+---
+
+## Customer Section
+
+Current "Change" button doesn't feel right.
+
+Possible replacements:
+
+* Select Customer
+* Switch Customer
+* Attach Customer
+
+History should open purchase history instead of recent list.
+
+Need a cleaner customer card.
+
+Show:
+
+* Name
+* Mobile
+* Previous Bills
+* Lifetime Spend (optional)
+
+---
+
+Invoice
+
+Bills must always be stored.
+
+Need:
+
+* Invoice history
+* Search invoices
+* Customer-wise purchases
+* Product-wise sales
+* Reprint invoice
+* Download PDF
+* Edit recent invoice within allowed time
+
+---
+
+## Recent Bill
+
+After completing bill,
+
+Need immediate access to:
+
+* Edit last bill
+* Add forgotten product
+* Reprint
+* Preview
+* Start fresh bill
+
+Transition to new bill should feel smoother.
+
+Currently previous customer still flashes for a second.
+
+---
+
+## Product Grid
+
+Need larger rows.
+
+18 visible rows not necessary.
+
+Better:
+
+* Bigger product information
+* Scrollable grid
+* Easier readability
+
+---
+
+## Drawers
+
+Drawer should become active workspace.
+
+When drawer opens:
+
+* Hide workstation status bar
+* Disable background
+* Trap keyboard focus
+* ESC closes
+* Focus returns correctly
+
+Need to remove blank space inside drawers.
+
+---
+
+## Reports
+
+Every filter should support:
+
+* Today
+* Yesterday
+* This Week
+* This Month
+* Last Month
+* Custom Date Range
+
+Need same filtering everywhere.
+
+---
+
+## Dashboard
+
+Revenue graph should show
+
+Daily revenue
+
+NOT
+
+Each invoice.
+
+Need more meaningful analytics.
+
+---
+
+## Customer Analytics
+
+Need:
+
+Top Customers
+
+Most Purchased Products
+
+Repeat Customers
+
+Inactive Customers
+
+Average Bill Value
+
+Payment Trends
+
+---
+
+## Inventory
+
+Need better stock insights.
+
+Possible additions:
+
+* Dead Stock
+* Fast Moving Items
+* Slow Moving Items
+* Reorder Suggestions
+* Low Stock Prediction
+
+---
+
+## Category Module
+
+Category IDs should be standardized.
+
+CAT-0001
+
+CAT-0002
+
+CAT-0003
+
+instead of random generated IDs.
+
+---
+
+## AI Ideas
+
+Natural language reporting.
+
+Examples:
+
+"Show today's sales"
+
+"Which products are running low?"
+
+"Who is my best customer this month?"
+
+"Revenue this week"
+
+
+Exposing MCP server.
+
+AI Agents could directly interact with ERP.
+
+Potential use cases:
+
+* Voice assistant
+* AI inventory assistant
+* AI sales reports
+* AI purchase recommendations
+
+
+
+
